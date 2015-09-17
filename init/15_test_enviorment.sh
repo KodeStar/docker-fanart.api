@@ -7,7 +7,3 @@ if [ -z $APIKEY ]; then
 else
 	/sbin/setuser abc echo $APIKEY > /config/APIKEY
 fi
-fi
-if [ -z $IMGCACHE ]; then
-	export IMGCACHE=false
-fi
