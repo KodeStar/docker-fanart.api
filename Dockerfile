@@ -1,6 +1,6 @@
 FROM linuxserver/baseimage.nginx
 MAINTAINER Your Name <your@email.com>
-ENV APTLIST="nginx redis-server git redis-tools php5 php5-fpm php5-common php5-apcu php5-mcrypt php5-cli php5-curl libgd-dev php5-redis" BUILDLIST="build-essential"
+ENV APTLIST="nginx redis-server git redis-tools php5 php5-fpm php5-common php5-apcu php5-mcrypt php5-cli php5-curl libgd-dev php5-redis" BUILDLIST="build-essential" PUID="911" PGID="911"
 #Applying stuff
 RUN apt-get update -q && \
 apt-get install -yq $APTLIST $BUILDLIST && \
